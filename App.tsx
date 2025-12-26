@@ -240,13 +240,93 @@ const App: React.FC = () => {
         return (
 <div className="container mx-auto px-6 pt-32 pb-24 text-green-500 fade-in-custom cyber-pulse">
             <div className="max-w-6xl mx-auto mt-12 md:mt-20">
-              <div className="relative inline-block mb-12 text-left md:text-center w-full">
-                 <div className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-full animate-pulse"></div>
-                 <h1 className="relative text-7xl md:text-[13rem] font-black leading-[0.8] tracking-tighter uppercase scanline p-6 md:p-14 bg-black border-4 border-green-900 rounded-[3rem] shadow-[0_0_80px_rgba(34,197,94,0.15)]">
-                   <span className="text-green-100 drop-shadow-[0_0_25px_rgba(34,197,94,0.8)]">Ananya</span><br/>
-                   <span className="text-green-600 opacity-60">Sarkar.</span>
-                 </h1>
-              </div>
+<div
+  style={{
+    position: "relative",
+    display: "inline-block",
+    marginBottom: "3rem",
+    textAlign: "left",
+    width: "100%",
+  }}
+>
+  {/* BACKGROUND GLOW */}
+  <div
+    style={{
+      position: "absolute",
+      top: "-40px",
+      left: "-40px",
+      right: "-40px",
+      bottom: "-40px",
+      backgroundColor: "rgba(34,197,94,0.1)", // green-500/10
+      filter: "blur(100px)",
+      opacity: 0.3,
+      borderRadius: "9999px",
+      animation: "pulseGlow 3s ease-in-out infinite",
+      pointerEvents: "none",
+    }}
+  ></div>
+
+  {/* MAIN TITLE BOX */}
+  <h1
+    style={{
+      position: "relative",
+      fontSize: "7rem",
+      fontFamily: "Plus Jakarta Sans, sans-serif",
+      fontWeight: 900,
+      lineHeight: 0.8,
+      textTransform: "uppercase",
+      padding: "3rem",
+      background: "black",
+      border: "4px solid rgb(20,83,45)", // green-900
+      borderRadius: "3rem",
+      boxShadow: "0 0 80px rgba(34,197,94,0.15)",
+      overflow: "hidden",
+    }}
+  >
+    {/* SCANLINE EFFECT */}
+    <div
+      style={{
+        content: '""',
+        position: "absolute",
+        inset: 0,
+        background:
+          "repeating-linear-gradient(to bottom, rgba(0,255,0,0.05) 0, rgba(0,255,0,0.05) 1px, transparent 2px, transparent 3px)",
+        pointerEvents: "none",
+      }}
+    />
+
+    {/* FIRST NAME */}
+    <span
+      style={{
+        color: "rgb(240,255,240)", // green-100
+        textShadow: "0 0 25px rgba(34,197,94,0.8)",
+      }}
+    >
+      Ananya
+    </span>
+    <br />
+
+    {/* LAST NAME */}
+    <span
+      style={{
+        color: "rgba(34,197,94,0.6)", // green-600/60
+      }}
+    >
+      Sarkar.
+    </span>
+  </h1>
+
+  {/* KEYFRAMES injected */}
+  <style>
+    {`
+      @keyframes pulseGlow {
+        0% { opacity: 0.2; }
+        50% { opacity: 0.35; }
+        100% { opacity: 0.2; }
+      }
+    `}
+  </style>
+</div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left mt-20">
                  <div className="space-y-10">
