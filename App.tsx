@@ -44,14 +44,14 @@ const App: React.FC = () => {
             <h1 className="text-4xl md:text-6xl font-black mb-12 uppercase tracking-tighter">[!] SYSTEM_LOG_EXPERIENCE</h1>
             <div className="grid grid-cols-1 gap-12 max-w-4xl">
               <section>
-                <h2 className="text-xl font-bold text-green-400 mb-8 border-b border-green-900 pb-2 uppercase tracking-widest flex items-center gap-2">
+                <h2 className="text-xl font-bold text-green-900 mb-8 border-b border-green-900 pb-2 uppercase tracking-widest flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>Active_Assignment
                 </h2>
                 {EXPERIENCES.filter(e => e.isCurrent).map(exp => (
                   <div key={exp.id} className="p-8 border-2 border-green-500 bg-green-500/5 rounded-2xl relative overflow-hidden">
                     <div className="flex flex-col md:flex-row justify-between mb-4 gap-2">
                       <h3 className="text-2xl font-black text-green-100 uppercase">{exp.role}</h3>
-                      <span className="text-green-400 font-bold bg-green-900/30 px-3 py-1 rounded-lg text-xs self-start">{exp.period}</span>
+                      <span className="text-green-900 font-bold bg-green-900/30 px-3 py-1 rounded-lg text-xs self-start">{exp.period}</span>
                     </div>
                     <div className="text-lg font-bold text-green-500 mb-4">{exp.company}</div>
                     <p className="text-green-800 leading-relaxed text-sm md:text-base font-bold">{exp.description}</p>
@@ -59,16 +59,16 @@ const App: React.FC = () => {
                 ))}
               </section>
               <section>
-                <h2 className="text-xl font-bold text-green-400 mb-8 border-b border-green-900 pb-2 uppercase tracking-widest">Archived_Records</h2>
+                <h2 className="text-xl font-bold text-green-900 mb-8 border-b border-green-900 pb-2 uppercase tracking-widest">Archived_Records</h2>
                 <div className="space-y-6">
                   {EXPERIENCES.filter(e => !e.isCurrent).map(exp => (
                     <div key={exp.id} className="p-6 border border-green-900/50 bg-black rounded-xl hover:border-green-500 transition-all">
                       <div className="flex flex-col md:flex-row justify-between mb-2 gap-2">
                         <h3 className="text-xl font-bold text-green-300 uppercase">{exp.role}</h3>
-                        <span className="text-green-400 text-xs font-bold">{exp.period}</span>
+                        <span className="text-green-900 text-xs font-bold">{exp.period}</span>
                       </div>
                       <div className="text-green-700 font-bold text-sm mb-3">{exp.company}</div>
-                      <p className="text-green-400 text-sm leading-relaxed">{exp.description}</p>
+                      <p className="text-green-900 text-sm leading-relaxed">{exp.description}</p>
                     </div>
                   ))}
                 </div>
@@ -112,7 +112,7 @@ const App: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               <div className="space-y-10">
                 <h1 className="text-4xl md:text-6xl font-black tracking-tighter uppercase">[#] SHELL_ACCESS</h1>
-                <p className="text-green-400 text-lg font-bold leading-relaxed border-l-4 border-green-900 pl-6">
+                <p className="text-green-900 text-lg font-bold leading-relaxed border-l-4 border-green-900 pl-6">
                   Leveraging 4+ years of Frontend architecture to exploit and secure modern web ecosystems. Bridge between UI/UX aesthetics and binary hardening.
                 </p>
                 <InteractiveTerminal />
@@ -142,7 +142,7 @@ const App: React.FC = () => {
                      <svg className="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
                   </div>
                   <div>
-                    <div className="text-[10px] font-black text-green-400 uppercase tracking-[0.4em] mb-4">Node_01 // Cyber_Security</div>
+                    <div className="text-[10px] font-black text-green-900 uppercase tracking-[0.4em] mb-4">Node_01 // Cyber_Security</div>
                     <h2 className="text-3xl font-black text-green-500 uppercase mb-4 tracking-tighter">Cyber Security Notes</h2>
                     <p className="text-green-800 font-bold text-sm leading-relaxed max-w-md">
                        A comprehensive collection of my penetration testing logs, TryHackMe room write-ups, and security research documents.
@@ -159,7 +159,7 @@ const App: React.FC = () => {
                      <svg className="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
                   </div>
                   <div>
-                    <div className="text-[10px] font-black text-green-400 uppercase tracking-[0.4em] mb-4">Node_02 // Hobbies</div>
+                    <div className="text-[10px] font-black text-green-900 uppercase tracking-[0.4em] mb-4">Node_02 // Hobbies</div>
                     <h2 className="text-3xl font-black text-green-500 uppercase mb-4 tracking-tighter">Hobby Review Hub</h2>
                     <p className="text-green-800 font-bold text-sm leading-relaxed max-w-md">
                        Deep dives into cinema and literature. My personal reviews and thoughts on the books and movies that shape my perspective.
@@ -214,7 +214,7 @@ const App: React.FC = () => {
           
           <nav className="hidden lg:flex items-center gap-1 bg-green-950/20 border border-green-900 px-3 py-1.5 rounded-xl">
             {menuItems.filter(item => item.view !== 'Contact').map((item) => (
-              <button key={item.label} onClick={() => setCurrentView(item.view)} className={`px-6 py-2 rounded-lg text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 ${currentView === item.view ? 'bg-green-500 text-black' : 'text-green-400 hover:text-green-400'}`}>
+              <button key={item.label} onClick={() => setCurrentView(item.view)} className={`px-6 py-2 rounded-lg text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 ${currentView === item.view ? 'bg-green-500 text-black' : 'text-green-900 hover:text-green-900'}`}>
                 [{item.label}]
               </button>
             ))}
@@ -241,7 +241,7 @@ const App: React.FC = () => {
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-[60] backdrop-blur-3xl bg-black/98 animate-in fade-in duration-300">
            <div className="flex flex-col items-center justify-center h-full gap-8">
-              <div className="text-[10px] font-black text-green-400 uppercase tracking-[0.5em] mb-4">Navigation_Menu</div>
+              <div className="text-[10px] font-black text-green-900 uppercase tracking-[0.5em] mb-4">Navigation_Menu</div>
               {menuItems.map(item => (
                 <button 
                   key={item.label} 
