@@ -248,17 +248,24 @@ const App: React.FC = () => {
     className="relative p-6 md:p-14 bg-black border-[3px] border-green-700 rounded-[3rem] shadow-[0_0_80px_rgba(34,197,94,0.2)] overflow-hidden"
     style={{
       boxShadow: "0 0 40px rgba(0,255,100,0.25) inset",
-      position: "relative",
+      position: "relative">
+    <div>
+    className="absolute inset-0 opacity-[0.13] pointer-events-none"
+    style={{
+      background:
+        "repeating-linear-gradient(to bottom, rgba(0,255,100,0.05) 0px, rgba(0,255,100,0.05) 2px, transparent 3px, transparent 4px)"
     }}
-  >
-    {/* Scanline Overlay */}
-    <div
-      className="pointer-events-none absolute inset-0 opacity-30"
-      style={{
-        background:
-          "repeating-linear-gradient(to bottom, rgba(0,255,100,0.05) 0px, rgba(0,255,100,0.05) 2px, transparent 3px, transparent 4px)",
-      }}
-    ></div>
+  ></div>
+
+  {/* --- Moving scanner bar --- */}
+  <div
+    className="absolute inset-x-0 h-24 pointer-events-none"
+    style={{
+      top: "-10%",
+      background: "linear-gradient(to bottom, rgba(0,255,100,0.15), rgba(0,255,100,0))",
+      animation: "scanMove 4s linear infinite"
+    }}
+  ></div>
 
     <h1
       className="relative font-black uppercase tracking-tight leading-[0.8]"
