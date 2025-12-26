@@ -254,10 +254,10 @@ const App: React.FC = () => {
     <div
       className="absolute inset-x-0 h-10 pointer-events-none z-0"
       style={{
-        top: "-10%",
+        top: "0",
         background:
           "linear-gradient(to bottom, rgba(0,255,100,0.20), rgba(0,255,100,0) 2px, transparent 3px, transparent 4px)",
-        animation: "scanMove 3s linear infinite"
+        animation: "scanMove 2.5s linear infinite"
       }}
     ></div>
 
