@@ -238,7 +238,7 @@ const App: React.FC = () => {
 
       default:
         return (
-<div className="container mx-auto px-6 pt-32 pb-24 text-green-500">
+<div className="container mx-auto px-6 pt-32 pb-24 text-green-500 fade-in-custom">
             <div className="relative inline-block mb-12 text-left md:text-center w-full">
 <div
   style={{
