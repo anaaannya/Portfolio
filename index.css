@@ -107,6 +107,10 @@
 }
 
 @keyframes scanMove {
-  0%   { transform: translateY(-20%); }
-  100% { transform: translateY(120%); }
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(110%);
+  }
 }
