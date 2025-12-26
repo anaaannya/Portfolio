@@ -214,9 +214,23 @@ const App: React.FC = () => {
         return (
           <div className={containerClass}>
              <div className="max-w-3xl mx-auto p-12 bg-black border-2 border-green-500 rounded-2xl relative shadow-[0_0_50px_rgba(34,197,94,0.1)]">
-                <h1 className="text-4xl font-black mb-10 uppercase text-green-500 tracking-tighter">&gt;&gt; PING_NODE</h1>
+                <h1 className="text-4xl font-black mb-10 uppercase text-green-500 tracking-tighter">>> PING_NODE</h1>
                 <form className="space-y-6">
-                  ...
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                       <label className="text-[10px] font-black text-green-900 uppercase tracking-widest">Source_Name</label>
+                       <input type="text" placeholder="UID_HANDLE" className="w-full bg-black border-2 border-green-950 rounded-xl px-4 py-3 focus:border-green-500 outline-none text-green-400 font-bold" />
+                    </div>
+                    <div className="space-y-2">
+                       <label className="text-[10px] font-black text-green-900 uppercase tracking-widest">Return_Address</label>
+                       <input type="email" placeholder="ADDR_V4" className="w-full bg-black border-2 border-green-950 rounded-xl px-4 py-3 focus:border-green-500 outline-none text-green-400 font-bold" />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-[10px] font-black text-green-900 uppercase tracking-widest">Encrypted_Payload</label>
+                    <textarea rows={5} placeholder="TRANSMIT_MSG..." className="w-full bg-black border-2 border-green-950 rounded-xl px-4 py-3 focus:border-green-500 outline-none text-green-400 font-bold"></textarea>
+                  </div>
+                  <button className="w-full py-5 font-black rounded-xl bg-green-500 text-black hover:bg-green-400 transition-all uppercase tracking-widest shadow-[0_0_20px_rgba(34,197,94,0.3)]">Send_Packet</button>
                 </form>
              </div>
           </div>
