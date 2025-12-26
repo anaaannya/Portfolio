@@ -240,34 +240,30 @@ const App: React.FC = () => {
         return (
           <div className="container mx-auto px-6 pt-32 pb-24 text-green-500">
             <div className="max-w-6xl mx-auto mt-12 md:mt-20">
-<div className="relative inline-block mb-12 text-left md:text-center w-full">
+<<div className="relative inline-block w-full">
 
+  {/* Ambient glow */}
   <div className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-[3rem] animate-pulse"></div>
 
   <div
     className="scanline relative p-6 md:p-14 bg-black border-[3px] border-green-700 rounded-[3rem] shadow-[0_0_80px_rgba(34,197,94,0.2)] overflow-hidden"
-    style={{
-      boxShadow: "0 0 40px rgba(0,255,100,0.25) inset",
-      position: "relative"
-    }}
+    style={{ boxShadow: "0 0 40px rgba(0,255,100,0.25) inset" }}
   >
 
-    {/* Scanner Line */}
+    {/* Moving Scanner Line */}
     <div
-      className="absolute inset-x-0 h-24 pointer-events-none"
+      className="absolute inset-x-0 h-10 pointer-events-none z-0"
       style={{
         top: "-10%",
-        background: "linear-gradient(to bottom, rgba(0,255,100,0.15), rgba(0,255,100,0))",
-        animation: "scanMove 4s linear infinite"
+        background:
+          "linear-gradient(to bottom, rgba(0,255,100,0.20), rgba(0,255,100,0))",
+        animation: "scanMove 3s linear infinite"
       }}
     ></div>
 
     {/* TEXT */}
-    <h1
-      className="relative font-black uppercase tracking-tight leading-[0.8]"
-      style={{ position: "relative", zIndex: 2 }}
-    >
-      <span className="block text-green-100 drop-shadow-[0_0_25px_rgba(34,197,94,0.8)] md:text-[10rem] text-5xl pl-6 md:pl-20">
+    <h1 className="relative z-20 font-black uppercase tracking-tight leading-[0.8]">
+      <span className="block text-green-100 md:text-[10rem] text-5xl pl-6 md:pl-20">
         Ananya
       </span>
 
@@ -277,8 +273,8 @@ const App: React.FC = () => {
     </h1>
 
   </div>
-
 </div>
+
 
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left mt-20">
