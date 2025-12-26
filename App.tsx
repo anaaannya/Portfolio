@@ -258,8 +258,8 @@ const App: React.FC = () => {
                  </h1>
                       <style>
           @keyframes scanMove {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(100%); }
+            0% { transform: translateY(0) }
+            100% { transform: translateY(100%)}
           } </style>
               </div>
                  
