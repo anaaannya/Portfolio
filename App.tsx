@@ -238,7 +238,7 @@ const App: React.FC = () => {
 
       default:
         return (
-<div className="">
+<div className="relative inline-block mb-12 text-left md:text-center w-full">
             <div className="">
 <div
   style={{
