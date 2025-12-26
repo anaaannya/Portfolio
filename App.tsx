@@ -291,7 +291,7 @@ const App: React.FC = () => {
                                 <div className="text-[10px] font-bold text-green-900 uppercase">Books & Movies Reviewing Page</div>
                              </div>
                           </div>
-                          <div className="text-green-500 group-hover:translate-x-1 transition-transform font-black">>></div>
+                          <div className="text-green-500 group-hover:translate-x-1 transition-transform font-black">&gt;&gt;</div>
                        </button>
                        <button onClick={() => setCurrentView('Blogs')} className="group p-6 border border-green-950 bg-black hover:border-green-500 transition-all rounded-2xl flex justify-between items-center text-left">
                           <div className="flex items-center gap-4">
@@ -303,7 +303,7 @@ const App: React.FC = () => {
                                 <div className="text-[10px] font-bold text-green-900 uppercase">Pentest Logs & Security Research</div>
                              </div>
                           </div>
-                          <div className="text-green-500 group-hover:translate-x-1 transition-transform font-black">>></div>
+                          <div className="text-green-500 group-hover:translate-x-1 transition-transform font-black">&gt;&gt;</div>
                        </button>
                     </div>
                     <div className="p-6 border border-green-900 rounded-2xl bg-green-950/10">
