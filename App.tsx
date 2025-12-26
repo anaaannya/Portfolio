@@ -176,9 +176,38 @@ const App: React.FC = () => {
 
       case 'About':
         return (
-          /* unchanged */
-          <>
-          </>
+          <div className={containerClass}>
+            <div className="max-w-5xl mx-auto border-2 border-green-900 p-8 md:p-12 bg-black/50 scanline relative rounded-2xl">
+              <div className="mb-10 font-mono text-green-950 flex justify-between text-[10px] uppercase font-black">
+                <span>[ SUBJECT_REPORT: ANANYA_SARKAR ]</span>
+                <span className="animate-pulse">SYSTEM_STABLE</span>
+              </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="border-2 border-green-900 p-2 bg-black overflow-hidden">
+                  <img src="https://picsum.photos/seed/ananya/600/600" alt="Ananya" className="grayscale contrast-150 opacity-40 w-full" />
+                </div>
+                <div className="space-y-8">
+                  <div>
+                    <h2 className="text-5xl font-black text-green-500 uppercase tracking-tighter leading-none">Ananya Sarkar</h2>
+                    <p className="text-green-800 mt-3 font-bold tracking-widest text-sm uppercase">Hybrid Frontend-Security Specialist</p>
+                  </div>
+                  <div className="p-6 border border-green-950 bg-green-500/5 text-xs md:text-sm font-bold text-green-700">
+                    Mid-level executive with expertise in HTML, CSS, Bootstrap 4, Figma UI/UX, WordPress No-Code, Responsive Web Design, and Canva.
+                    <br/><br/>
+                    Transitioning to Cyber Security. Mastering the offensive mindset to build superior defensive infrastructures.
+                  </div>
+                  <div className="grid grid-cols-2 gap-4">
+                    {SKILLS.map(skill => (
+                      <div key={skill.name} className="p-3 border border-green-950 bg-black">
+                        <span className="text-[9px] text-green-950 font-black uppercase mb-1 block">{skill.name}</span>
+                        <div className="h-1 bg-green-950 w-full"><div className="h-full bg-green-500" style={{ width: `${skill.level}%` }}></div></div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         );
 
       case 'Contact':
