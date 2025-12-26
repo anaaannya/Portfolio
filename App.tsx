@@ -238,8 +238,8 @@ const App: React.FC = () => {
 
       default:
         return (
-<div className="relative inline-block mb-12 text-left md:text-center w-full">
-            <div className="">
+<div className="container">
+            <div className="relative inline-block mb-12 text-left md:text-center w-full">
 <div
   style={{
     position: "relative",
