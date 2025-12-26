@@ -240,13 +240,42 @@ const App: React.FC = () => {
         return (
           <div className="container mx-auto px-6 pt-32 pb-24 text-green-500">
             <div className="max-w-6xl mx-auto mt-12 md:mt-20">
-              <div className="relative inline-block mb-12 text-left md:text-center w-full">
-                 <div className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-full animate-pulse"></div>
-                 <h1 className="relative text-7xl md:text-[13rem] font-black leading-[0.8] tracking-tighter uppercase scanline p-6 md:p-14 bg-black border-4 border-green-900 rounded-[3rem] shadow-[0_0_80px_rgba(34,197,94,0.15)]">
-                   <span className="text-green-100 drop-shadow-[0_0_25px_rgba(34,197,94,0.8)]">Ananya</span><br/>
-                   <span className="text-green-600 opacity-60">Sarkar.</span>
-                 </h1>
-              </div>
+<div className="relative inline-block mb-12 text-left md:text-center w-full">
+ 
+  <div className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-[3rem] animate-pulse"></div>
+
+  <div
+    className="relative p-6 md:p-14 bg-black border-[3px] border-green-700 rounded-[3rem] shadow-[0_0_80px_rgba(34,197,94,0.2)] overflow-hidden"
+    style={{
+      boxShadow: "0 0 40px rgba(0,255,100,0.25) inset",
+      position: "relative",
+    }}
+  >
+    {/* Scanline Overlay */}
+    <div
+      className="pointer-events-none absolute inset-0 opacity-30"
+      style={{
+        background:
+          "repeating-linear-gradient(to bottom, rgba(0,255,100,0.05) 0px, rgba(0,255,100,0.05) 2px, transparent 3px, transparent 4px)",
+      }}
+    ></div>
+
+    <h1
+      className="relative font-black uppercase tracking-tight leading-[0.8]"
+      style={{ position: "relative", zIndex: 2 }}
+    >
+      {/* ANANYA shifted right */}
+      <span className="block text-green-100 drop-shadow-[0_0_25px_rgba(34,197,94,0.8)] md:text-[13rem] text-7xl pl-6 md:pl-20">
+        Ananya
+      </span>
+
+      {/* SARKAR centered & darker */}
+      <span className="block text-green-600 opacity-60 md:text-[13rem] text-7xl">
+        Sarkar.
+      </span>
+    </h1>
+  </div>
+</div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left mt-20">
                  <div className="space-y-10">
