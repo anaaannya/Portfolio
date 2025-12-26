@@ -259,8 +259,7 @@ const App: React.FC = () => {
     >
       {/* Background Glow */}
       <div
-        className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-full animate-pulse"}
-      ></div>
+        className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-full animate-pulse"></div>
 
       {/* MAIN TITLE BOX */}
       <h1
