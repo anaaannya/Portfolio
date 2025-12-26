@@ -245,21 +245,12 @@ const App: React.FC = () => {
   <div className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-[3rem] animate-pulse"></div>
 
   <div
-    className="relative p-6 md:p-14 bg-black border-[3px] border-green-700 rounded-[3rem] shadow-[0_0_80px_rgba(34,197,94,0.2)] overflow-hidden"
+    className="scanline relative p-6 md:p-14 bg-black border-[3px] border-green-700 rounded-[3rem] shadow-[0_0_80px_rgba(34,197,94,0.2)] overflow-hidden"
     style={{
       boxShadow: "0 0 40px rgba(0,255,100,0.25) inset",
       position: "relative"
     }}
   >
-
-    {/* Horizontal Scanlines */}
-    <div
-      className="absolute inset-0 opacity-[0.13] pointer-events-none"
-      style={{
-        background:
-          "repeating-linear-gradient(to bottom, rgba(0,255,100,0.05) 0px, rgba(0,255,100,0.05) 2px, transparent 3px, transparent 4px)"
-      }}
-    ></div>
 
     {/* Scanner Line */}
     <div
