@@ -238,9 +238,86 @@ const App: React.FC = () => {
 
       default:
         return (
-          /* unchanged */
-          <>
-          </>
+          <div className={containerClass}>
+            <div className="max-w-6xl mx-auto mt-12 md:mt-20">
+              <div className="relative inline-block mb-12 text-left md:text-center w-full">
+                 <div className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-full animate-pulse"></div>
+                 <h1 className="relative text-7xl md:text-[13rem] font-black leading-[0.8] tracking-tighter uppercase scanline p-6 md:p-14 bg-black border-4 border-green-900 rounded-[3rem] shadow-[0_0_80px_rgba(34,197,94,0.15)]">
+                   <span className="text-green-100 drop-shadow-[0_0_25px_rgba(34,197,94,0.8)]">Ananya</span><br/>
+                   <span className="text-green-600 opacity-60">Sarkar.</span>
+                 </h1>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left mt-20">
+                 <div className="space-y-10">
+                    <div>
+                       <div className="text-[10px] font-black uppercase tracking-[0.4em] text-green-950 mb-4">// MISSION_BRIEF</div>
+                       <p className="text-xl md:text-3xl font-black uppercase text-green-400 leading-tight">
+                          Mid-Level Executive bridging <span className="text-white">Frontend Architecture</span> with <span className="text-green-600">Offensive Security</span>.
+                       </p>
+                    </div>
+                    
+                    <div className="grid grid-cols-2 gap-4">
+                       <div className="p-4 border border-green-900 bg-green-500/5 rounded-xl">
+                          <div className="text-[9px] font-black text-green-950 mb-2 uppercase tracking-tighter">Stack_Overview</div>
+                          <div className="text-xs font-bold text-green-700 leading-relaxed uppercase">
+                             HTML5, CSS3, Bootstrap 4, Figma, WordPress, Responsive Design, Canva.
+                          </div>
+                       </div>
+                       <div className="p-4 border border-green-900 bg-green-500/5 rounded-xl">
+                          <div className="text-[9px] font-black text-green-950 mb-2 uppercase tracking-tighter">Security_Ops</div>
+                          <div className="text-xs font-bold text-green-700 leading-relaxed uppercase">
+                             Active on TryHackMe. Junior Pentester path. 70+ rooms cleared.
+                          </div>
+                       </div>
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row gap-4">
+                       <button onClick={() => setCurrentView('Work')} className="px-10 py-5 rounded-xl font-black bg-green-500 text-black shadow-[0_0_30px_rgba(34,197,94,0.3)] hover:scale-105 transition-transform uppercase tracking-widest text-xs">Explore_Work</button>
+                       <button onClick={() => setCurrentView('Security')} className="px-10 py-5 rounded-xl font-black border-2 border-green-500 text-green-500 bg-black hover:bg-green-500/10 transition-all uppercase tracking-widest text-xs">Access_Lab</button>
+                    </div>
+                 </div>
+
+                 <div className="space-y-8">
+                    <div className="text-[10px] font-black uppercase tracking-[0.4em] text-green-950 mb-4">// KNOWLEDGE_NODES</div>
+                    <div className="grid grid-cols-1 gap-4">
+                       <button onClick={() => setCurrentView('Blogs')} className="group p-6 border border-green-950 bg-black hover:border-green-500 transition-all rounded-2xl flex justify-between items-center text-left">
+                          <div className="flex items-center gap-4">
+                             <div className="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-500 border border-green-900">
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                             </div>
+                             <div>
+                                <div className="text-xs font-black text-green-500 uppercase mb-1">Hobby Review Hub</div>
+                                <div className="text-[10px] font-bold text-green-900 uppercase">Books & Movies Reviewing Page</div>
+                             </div>
+                          </div>
+                          <div className="text-green-500 group-hover:translate-x-1 transition-transform font-black">>></div>
+                       </button>
+                       <button onClick={() => setCurrentView('Blogs')} className="group p-6 border border-green-950 bg-black hover:border-green-500 transition-all rounded-2xl flex justify-between items-center text-left">
+                          <div className="flex items-center gap-4">
+                             <div className="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-500 border border-green-900">
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                             </div>
+                             <div>
+                                <div className="text-xs font-black text-green-500 uppercase mb-1">Cyber Notes</div>
+                                <div className="text-[10px] font-bold text-green-900 uppercase">Pentest Logs & Security Research</div>
+                             </div>
+                          </div>
+                          <div className="text-green-500 group-hover:translate-x-1 transition-transform font-black">>></div>
+                       </button>
+                    </div>
+                    <div className="p-6 border border-green-900 rounded-2xl bg-green-950/10">
+                       <div className="text-[10px] font-black text-green-950 mb-4 uppercase">Latest_Activity_Log</div>
+                       <div className="space-y-3 text-[10px] font-mono text-green-800">
+                          <div className="flex justify-between border-b border-green-900/20 pb-1"><span>[!] UI_ARCHITECTURE_SYNC</span><span className="text-green-600">COMPLETE</span></div>
+                          <div className="flex justify-between border-b border-green-900/20 pb-1"><span>[!] FIGMA_ASSETS_HARDENED</span><span className="text-green-600">VER_4.5</span></div>
+                          <div className="flex justify-between"><span>[!] THM_PENTEST_SESSION</span><span className="text-green-400">72_ROOMS</span></div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+            </div>
+          </div>
         );
     }
   };
