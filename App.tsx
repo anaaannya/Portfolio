@@ -238,10 +238,9 @@ const App: React.FC = () => {
 
       default:
         return (
-<div className="container mx-auto px-6 pt-32 pb-24 text-green-500 fade-in-custom cyber-pulse">
-            <div className="relative inline-block mb-12 text-left md:text-center w-full">
-<div
-  style={{
+<div className="container mx-auto px-6 pt-32 pb-24 text-green-500 fade-in-custom">
+            <div className="max-w-6xl mx-auto mt-12 md:mt-20">
+<div className="cyber-pulse" style={{
     position: "relative",
     display: "inline-block",
     marginBottom: "3rem",
