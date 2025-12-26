@@ -260,8 +260,6 @@ const App: React.FC = () => {
         position:relative;
         overflow:hidden;
     ">
-
-        <!-- scanline effect -->
         <div style="
             position:absolute;
             top:0;
