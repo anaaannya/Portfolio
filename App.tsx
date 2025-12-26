@@ -240,9 +240,9 @@ const App: React.FC = () => {
         return (
 <div className="container mx-auto px-6 pt-32 pb-24 text-green-500 fade-in-custom cyber-pulse">
             <div className="max-w-6xl mx-auto mt-12 md:mt-20">
-              <div className="relative inline-block mb-12 text-left md:text-center w-full">
+              <div className="relative inline-block mb-12 text-left md:text-center w-full cyber-bg fade-smooth neon-frame scanline">
                  <div className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-full animate-pulse"></div>
-                 <h1 className="relative text-7xl md:text-[13rem] font-black leading-[0.8] tracking-tighter uppercase scanline p-6 md:p-14 bg-black border-4 border-green-900 rounded-[3rem] shadow-[0_0_80px_rgba(34,197,94,0.15)]">
+                 <h1 className="relative text-7xl md:text-[13rem] font-black leading-[0.8] tracking-tighter uppercase p-6 md:p-14 neon-text">
                    <span className="text-green-100 drop-shadow-[0_0_25px_rgba(34,197,94,0.8)]">Ananya</span><br/>
                    <span className="text-green-600 opacity-60">Sarkar.</span>
                  </h1>
