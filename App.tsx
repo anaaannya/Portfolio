@@ -240,7 +240,7 @@ const App: React.FC = () => {
         return (
           <div className="container mx-auto px-6 pt-32 pb-24 text-green-500">
             <div className="max-w-6xl mx-auto mt-12 md:mt-20">
-<<div className="relative inline-block w-full">
+<div className="relative inline-block w-full">
 
   {/* Ambient glow */}
   <div className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-[3rem] animate-pulse"></div>
