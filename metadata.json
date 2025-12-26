@@ -1,0 +1,9 @@
+
+{
+  "name": "Ananya Sarkar - Frontend & Cyber Security Portfolio",
+  "description": "A high-performance portfolio for a mid-level professional specializing in Frontend development, UI/UX, and an emerging Cyber Security path.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
