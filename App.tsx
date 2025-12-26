@@ -238,7 +238,7 @@ const App: React.FC = () => {
 
       default:
         return (
-<div className="container">
+<div className="">
             <div className="">
 <div
   style={{
