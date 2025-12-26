@@ -265,12 +265,12 @@ const App: React.FC = () => {
       style={{ position: "relative", zIndex: 2 }}
     >
       {/* ANANYA shifted right */}
-      <span className="block text-green-100 drop-shadow-[0_0_25px_rgba(34,197,94,0.8)] md:text-[13rem] text-7xl pl-6 md:pl-20">
+      <span className="block text-green-100 drop-shadow-[0_0_25px_rgba(34,197,94,0.8)] md:text-[10rem] text-5xl pl-6 md:pl-20">
         Ananya
       </span>
 
       {/* SARKAR centered & darker */}
-      <span className="block text-green-600 opacity-60 md:text-[13rem] text-7xl">
+      <span className="block text-green-600 opacity-60 md:text-[10rem] text-5xl">
         Sarkar.
       </span>
     </h1>
