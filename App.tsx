@@ -246,14 +246,9 @@ const App: React.FC = () => {
   <div className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-[3rem] animate-pulse"></div>
 
   <div
-    className="scanline relative p-6 md:p-14 bg-black border-[3px] border-green-700 rounded-[3rem] shadow-[0_0_80px_rgba(34,197,94,0.2)] overflow-hidden"
+    className="relative p-6 md:p-14 bg-black border-[3px] border-green-700 rounded-[3rem] shadow-[0_0_80px_rgba(34,197,94,0.2)] overflow-hidden"
     style={{ boxShadow: "0 0 40px rgba(0,255,100,0.25) inset" }}
   >
-
-    {/* Moving Scanner Line */}
-
-
-    {/* TEXT */}
     <h1 className="relative z-20 font-black uppercase tracking-tight leading-[0.8]">
       <span className="block text-green-100 md:text-[10rem] text-5xl pl-6 md:pl-20">
         Ananya
@@ -263,6 +258,7 @@ const App: React.FC = () => {
         Sarkar.
       </span>
     </h1>
+  </div>
 
   </div>
 </div>
