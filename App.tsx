@@ -243,26 +243,10 @@ const App: React.FC = () => {
               <div className="relative inline-block mb-12 text-left md:text-center w-full">
                  <div className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-full animate-pulse"></div>
                  <h1 className="relative text-7xl md:text-[13rem] font-black leading-[0.8] tracking-tighter uppercase scanline p-6 md:p-14 bg-black border-4 border-green-900 rounded-[3rem] shadow-[0_0_80px_rgba(34,197,94,0.15)]">
-                            <div style={{
-            position: "absolute",
-            inset: 0,
-            background:
-              "repeating-linear-gradient(to bottom, rgba(0,255,0,0.05) 0, rgba(0,255,0,0.05) 1px, transparent 2px, transparent 3px)",
-            mixBlendMode: "overlay",
-            pointerEvents: "none",
-            animation: "scanMove 5s linear infinite",
-          }}>
                    <span className="text-green-100 drop-shadow-[0_0_25px_rgba(34,197,94,0.8)]">Ananya</span><br/>
                    <span className="text-green-600 opacity-60">Sarkar.</span>
-                              </div>
                  </h1>
-                      <style>
-          @keyframes scanMove {
-            0% { transform: translateY(0) }
-            100% { transform: translateY(100%)}
-          } </style>
               </div>
-                 
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left mt-20">
                  <div className="space-y-10">
