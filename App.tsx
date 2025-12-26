@@ -259,20 +259,7 @@ const App: React.FC = () => {
     >
       {/* Background Glow */}
       <div
-        style={{
-          position: "absolute",
-          top: "-40px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          width: "100%",
-          height: "100%",
-          backgroundColor: "rgba(34,197,94,0.1)",
-          filter: "blur(100px)",
-          opacity: 0.3,
-          borderRadius: "9999px",
-          animation: "pulseGlow 3s ease-in-out infinite",
-          pointerEvents: "none",
-        }}
+        className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-full animate-pulse"}
       ></div>
 
       {/* MAIN TITLE BOX */}
