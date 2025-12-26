@@ -256,8 +256,6 @@ const App: React.FC = () => {
         "repeating-linear-gradient(to bottom, rgba(0,255,100,0.05) 0px, rgba(0,255,100,0.05) 2px, transparent 3px, transparent 4px)"
     }}
   ></div>
-
-  {/* --- Moving scanner bar --- */}
   <div
     className="absolute inset-x-0 h-24 pointer-events-none"
     style={{
@@ -283,6 +281,7 @@ const App: React.FC = () => {
     </h1>
   </div>
 </div>
+          </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left mt-20">
                  <div className="space-y-10">
