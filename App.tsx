@@ -254,14 +254,15 @@ const App: React.FC = () => {
           }}>
                    <span className="text-green-100 drop-shadow-[0_0_25px_rgba(34,197,94,0.8)]">Ananya</span><br/>
                    <span className="text-green-600 opacity-60">Sarkar.</span>
+                              </div>
                  </h1>
                       <style>
           @keyframes scanMove {
             0% { transform: translateY(0); }
             100% { transform: translateY(100%); }
-          }
+          } </style>
               </div>
-                 </div>
+                 
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left mt-20">
                  <div className="space-y-10">
