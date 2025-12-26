@@ -256,7 +256,7 @@ const App: React.FC = () => {
       style={{
         top: "-10%",
         background:
-          "linear-gradient(to bottom, rgba(0,255,100,0.20), rgba(0,255,100,0))",
+          "linear-gradient(to bottom, rgba(0,255,100,0.20), rgba(0,255,100,0) 2px, transparent 3px, transparent 4px)",
         animation: "scanMove 3s linear infinite"
       }}
     ></div>
