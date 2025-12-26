@@ -238,94 +238,123 @@ const App: React.FC = () => {
 
       default:
         return (
-<div className="container mx-auto px-6 pt-32 pb-24 text-green-500 fade-in-custom">
-            <div className="max-w-6xl mx-auto mt-12 md:mt-20">
-<div className="cyber-pulse" style={{
-    position: "relative",
-    display: "inline-block",
-    marginBottom: "3rem",
-    textAlign: "left",
-    width: "100%",
-  }}
+<div 
+  className="container mx-auto px-6 pt-32 pb-24 text-green-500"
+  style={{ animation: "none" }}   // REMOVE page fade-in
 >
-  {/* BACKGROUND GLOW */}
-  <div
-    style={{
-      position: "absolute",
-      top: "-40px",
-      left: "-40px",
-      right: "-40px",
-      bottom: "-40px",
-      backgroundColor: "rgba(34,197,94,0.1)", // green-500/10
-      filter: "blur(100px)",
-      opacity: 0.3,
-      borderRadius: "9999px",
-      animation: "pulseGlow 3s ease-in-out infinite",
-      pointerEvents: "none",
-    }}
-  ></div>
+  <div className="max-w-6xl mx-auto mt-12 md:mt-20">
 
-  {/* MAIN TITLE BOX */}
-  <h1
-    style={{
-      position: "relative",
-      fontSize: "7rem",
-      fontFamily: "Plus Jakarta Sans, sans-serif",
-      fontWeight: 900,
-      lineHeight: 0.8,
-      textTransform: "uppercase",
-      padding: "3rem",
-      background: "black",
-      border: "4px solid rgb(20,83,45)", // green-900
-      borderRadius: "3rem",
-      boxShadow: "0 0 80px rgba(34,197,94,0.15)",
-      overflow: "hidden",
-    }}
-  >
-    {/* SCANLINE EFFECT */}
+    {/* ---- TITLE BLOCK ---- */}
     <div
+      className="cyber-pulse"
       style={{
-        content: '""',
-        position: "absolute",
-        inset: 0,
-        background:
-          "repeating-linear-gradient(to bottom, rgba(0,255,0,0.05) 0, rgba(0,255,0,0.05) 1px, transparent 2px, transparent 3px)",
-        pointerEvents: "none",
-      }}
-    />
-
-    {/* FIRST NAME */}
-    <span
-      style={{
-        color: "rgb(240,255,240)", // green-100
-        textShadow: "0 0 25px rgba(34,197,94,0.8)",
+        position: "relative",
+        display: "block",
+        marginBottom: "3rem",
+        width: "100%",
+        textAlign: "center",       // center horizontally
+        marginLeft: "auto",
+        marginRight: "auto",
       }}
     >
-      Ananya
-    </span>
-    <br />
+      {/* Background Glow */}
+      <div
+        style={{
+          position: "absolute",
+          top: "-40px",
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: "100%",
+          height: "100%",
+          backgroundColor: "rgba(34,197,94,0.1)",
+          filter: "blur(100px)",
+          opacity: 0.3,
+          borderRadius: "9999px",
+          animation: "pulseGlow 3s ease-in-out infinite",
+          pointerEvents: "none",
+        }}
+      ></div>
 
-    {/* LAST NAME */}
-    <span
-      style={{
-        color: "rgba(34,197,94,0.6)", // green-600/60
-      }}
-    >
-      Sarkar.
-    </span>
-  </h1>
+      {/* MAIN TITLE BOX */}
+      <h1
+        style={{
+          position: "relative",
+          fontSize: "7rem",
+          fontFamily: "Plus Jakarta Sans, sans-serif",
+          fontWeight: 900,
+          lineHeight: 0.8,
+          textTransform: "uppercase",
+          padding: "3rem",
+          background: "black",
+          border: "4px solid rgb(20,83,45)",
+          borderRadius: "3rem",
+          boxShadow: "0 0 80px rgba(34,197,94,0.15)",
+          overflow: "hidden",
+          display: "inline-block",
+          textAlign: "center",
 
-  {/* KEYFRAMES injected */}
-  <style>
-    {`
-      @keyframes pulseGlow {
-        0% { opacity: 0.2; }
-        50% { opacity: 0.35; }
-        100% { opacity: 0.2; }
-      }
-    `}
-  </style>
-</div>
+          // ONLY TITLE gets fade/glitch
+          animation: "titleFadeIn 1.5s ease-out forwards",
+        }}
+      >
+        {/* SCANLINES */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "repeating-linear-gradient(to bottom, rgba(0,255,0,0.05) 0, rgba(0,255,0,0.05) 1px, transparent 2px, transparent 3px)",
+            mixBlendMode: "overlay",
+            pointerEvents: "none",
+            animation: "scanMove 5s linear infinite",
+          }}
+        />
+
+        {/* FIRST NAME */}
+        <span
+          style={{
+            color: "rgb(240,255,240)",
+            textShadow: "0 0 25px rgba(34,197,94,0.8)",
+          }}
+        >
+          Ananya
+        </span>
+        <br />
+
+        {/* LAST NAME */}
+        <span
+          style={{
+            color: "rgba(34,197,94,0.6)",
+          }}
+        >
+          Sarkar.
+        </span>
+      </h1>
+
+      {/* KEYFRAMES */}
+      <style>
+        {`
+          @keyframes pulseGlow {
+            0% { opacity: 0.2; }
+            50% { opacity: 0.35; }
+            100% { opacity: 0.2; }
+          }
+
+          @keyframes scanMove {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(100%); }
+          }
+
+          @keyframes titleFadeIn {
+            0% { opacity: 0; transform: scale(0.95); filter: blur(10px); }
+            100% { opacity: 1; transform: scale(1); filter: blur(0); }
+          }
+        `}
+      </style>
+    </div>
+
+    {/* ---- REST OF YOUR HOME CONTENT (unchanged) ---- */}
+
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left mt-20">
                  <div className="space-y-10">
