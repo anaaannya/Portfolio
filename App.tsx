@@ -238,7 +238,7 @@ const App: React.FC = () => {
 
       default:
         return (
-          <div className={containerClass}>
+          <div className="container mx-auto px-6 pt-32 pb-24 text-green-500">
             <div className="max-w-6xl mx-auto mt-12 md:mt-20">
               <div className="relative inline-block mb-12 text-left md:text-center w-full">
                  <div className="absolute -inset-10 bg-green-500/10 blur-[100px] opacity-30 rounded-full animate-pulse"></div>
